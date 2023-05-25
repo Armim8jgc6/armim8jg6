@@ -38,6 +38,7 @@ public class RunnerEntity {
     public void setRunnerName(String runnerName) {
         this.runnerName = runnerName;
     }
+    public void setheight(long height) {this.height = height;}
 
     public void setAveragePace(long averagePace) {
         this.averagePace = averagePace;
