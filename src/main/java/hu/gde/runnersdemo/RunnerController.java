@@ -19,8 +19,11 @@ public class RunnerController {
     private LapTimeRepository lapTimeRepository;
     @GetMapping("/runners")
     public String getAllRunners(Model model) {
+        RunnerService runnerService = new RunnerService(runnerRepository);
         List<RunnerEntity> runners = runnerRepository.findAll();
         model.addAttribute("runners", runners);
+        double averageheight = runnerService.getaverageheight();
+        model.addAttribute("averageheight", averageheight);
         return "runners";
     }
 
