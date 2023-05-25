@@ -16,6 +16,9 @@ public class RunnerEntity {
 
     @OneToMany(mappedBy = "runner", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<LapTimeEntity> laptimes = new ArrayList<>();
+    @OneToMany(mappedBy = "runner", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<SponsorEntity> SponsorType = new ArrayList<>();
+
 
 
     public RunnerEntity() {
@@ -50,4 +53,5 @@ public class RunnerEntity {
     public List<LapTimeEntity> getLaptimes() {
         return laptimes;
     }
+    public List<SponsorEntity> getSponsorType(){return getSponsorType();}
 }
