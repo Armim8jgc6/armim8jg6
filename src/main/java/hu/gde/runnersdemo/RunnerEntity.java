@@ -36,6 +36,7 @@ public class RunnerEntity {
     public void setRunnerId(long runnerId) {
         this.runnerId = runnerId;
     }
+    public long getheight(){return height;}
 
     public void setRunnerName(String runnerName) {
         this.runnerName = runnerName;
