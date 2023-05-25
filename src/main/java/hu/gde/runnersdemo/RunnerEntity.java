@@ -20,7 +20,6 @@ public class RunnerEntity {
     private List<SponsorEntity> SponsorType = new ArrayList<>();
 
 
-
     public RunnerEntity() {
     }
 
